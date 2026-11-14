@@ -1,0 +1,200 @@
+
+/*ini adalah bagian semua web*/
+body {
+	font:16px/28px georgia, sans-serif; 
+/*	background-color: #eaeaea;*/
+	background-image: url(gambar/latar.png);
+	color: #333; 
+}
+
+/*ini adalah bagian kotak biru paling atas*/
+.top-bar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 40px;
+	background-color: lightskyblue;
+	border-bottom: 3px solid #bab5c7;
+	z-index: 9999;
+}
+
+.top-bar .huruf {
+	margin-top: 10px;
+	font: 14px/18px century;
+}
+
+
+/*ini adalah bagian lebar kiri dan kanan web site (coba aja di tambah ukurannya lihat apa kejadiannya)*/
+.container {
+	width: 960px;
+	margin: 90px auto;
+	background-color: #cee6c8;
+	position: relative;
+	border-radius: 15px;
+}
+
+/*ini adalah bagian untuk membuat logo twiter*/
+.twitter {
+	width: 200px;
+	height: 200px;
+	background-image: url(gambar/twit.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	position: absolute;
+	top: -22px;
+	right: -27px;
+}
+
+
+/*ini bagian jarak antara tulisan home dengan gambar besar (hero)*/
+.header {
+	padding: 20px;
+}
+
+
+/*ini adalah ukuran jarak judul dengan bagian atas, coba aja tambah ukurannya lihat apa kejadiannya*/
+.header .judul {
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: bold;
+	color: #434b99;
+}
+
+
+/*ini adalah bagian untuk membuat menu Home About Products Service Contact*/
+.header ul li {
+	display: inline-block;
+	margin-top: 1px;
+	margin-right:40px;
+	margin-left: -40px;
+}
+
+
+/*ini bagian untuk membuat tulisan menu Home agar jika di arahkan kursor muncul kotak biru*/
+.header a {
+	text-decoration: none;
+	color: salmon;
+	padding: 3px;
+}
+
+.header a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+
+
+/*ini untuk membuat gambar besar di bagian tengah*/
+.hero {
+	margin-top: -27px;
+	height: 300px;
+	background-image: url(gambar/hero.jpg);
+	background-size: cover;
+	background-position: 0 -205px;
+	border-bottom: 5px solid lightskyblue;
+	border-top: 5px solid salmon;
+	border-right: 5px solid lightskyblue;
+	border-left: 5px solid salmon;
+}
+
+
+/*ini bagian besar untuk kotak pembuatan "judul artikel" dan isi content*/
+.main {
+	width: 600px;
+	box-sizing: border-box;
+	float: left;
+	padding: 10px;
+	margin-top: -15px;
+	text-align: justify;
+}
+
+.main h2 {
+	font-size: 24px;
+	font-weight: bold;
+	color: #3c4e81;
+}
+
+.main .penulis {
+	font-size: 13px;
+	margin-top: -20px;
+}
+
+.main .penulis a {
+	color: #d73a5b;
+	text-decoration: none;
+}
+
+.main .penulis a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+
+/*ini adalah pembagian besar kotak untuk "profil penulis" dan kebawahnya*/
+.sidebar {
+	width: 300px;
+	float: right;
+	padding: 20px;
+	text-align: justify;
+}
+
+.sidebar img {
+	width: 100px;
+	height: 150px;
+	float: left;
+	padding-right: 10px;
+}
+
+.sidebar p {
+	font: 12px/18px arial;
+}
+
+
+/*ini adalah bagian bawah tempat kotak dan tulisan copy right*/
+.footer {
+	background-color: #6d7345;
+	padding-top: 40px
+}
+
+.footer .copy {
+	color: #e8f7f6;
+	text-align: center;
+	font-size: 12px;
+	margin-top: -30px;
+}
+
+
+/*ini untuk micro clearfix atau cf di content (agar footernya tidak naik ke atas)*/
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+/*ini bagian kotak kecil dibagian paling bawah*/
+.bottom-bar {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	height: 10px;
+	background-color: #bab5c7;
+	border-bottom: 3px solid salmon;
+	z-index: 9999;
+}
+
+
+
+
+
+
